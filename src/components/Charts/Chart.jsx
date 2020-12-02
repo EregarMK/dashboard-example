@@ -8,10 +8,12 @@ const ChartType = ({ children, layout, composed, size }) => {
 }
 
 const Chart = ({ layout, composed, height }) => {
+    const isDesktop = window.innerWidth > 576;
+
     return (
         <div>
             <ResponsiveContainer>
-                <ChartType size={{ width: 400, height: height }} data={data} layout={layout} barCategoryGap={4} composed={composed}>
+                <ChartType size={{ width: isDesktop ? 400 : 240, height: height }} data={data} layout={layout} barCategoryGap={4} composed={composed}>
                     <XAxis type={composed ? 'category' : 'number'} hide={!composed} />
                     <YAxis type={composed ? 'number' : 'category'} hide={!composed} />
                     <Tooltip cursor={{ fill: 'transparent', stroke: 'transparent' }} />
