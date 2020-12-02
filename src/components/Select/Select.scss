@@ -1,0 +1,35 @@
+.select {
+    &-wrapper {
+        position: relative;
+        font-size: var(--h6);
+        background-color: var(--select-bg);
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-left: calc(var(--panel-padding) * -1);
+        margin-right: calc(var(--panel-padding) * -1);
+        margin-bottom: calc(var(--panel-padding) * -1);
+        padding-left: var(--panel-padding);
+    }
+    &-options {
+        background-color: inherit;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 9999;
+        border: var(--panel-options-border);
+        &.hidden{
+            display: none;
+        }
+    }
+    &-option {
+        padding: var(--panel-padding);
+        transition: opacity 0.2s ease-in;
+        & + & {
+            border-top: var(--panel-options-border);
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
