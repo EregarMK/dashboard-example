@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: var(--wrapper-padding);
+}
+
+.dashboard {
+    background-color: var(--dashboard-bg);
+    padding: var(--dashboard-padding);
+    align-self: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    &-panels{
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: var(--grid-gap);
+    }
+    &-column{
+        display: grid;
+        gap: var(--grid-gap);
+    }
+    &-boxes{
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-box{
+        box-shadow: var(--shadow);
+        padding: var(--dashboard-box-padding);
+        &-title{
+            text-transform: uppercase;
+            margin-bottom: 2.0rem;
+        }
+    }
+    &-title{
+        margin-bottom: 4.0rem;
+    }
+}
