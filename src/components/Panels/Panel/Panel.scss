@@ -1,0 +1,19 @@
+.panel {
+    font-size: var(--h4);
+    padding: var(--panel-padding);
+    background-color: var(--dashboard-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    &-title {
+        text-transform: uppercase;
+        padding: 1.2rem 0;
+    }
+}
+
+.increased {
+    color: var(--increased); 
+}
+
+.decreased {
+    color: var(--decreased);
+}
