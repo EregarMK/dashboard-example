@@ -1,0 +1,42 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--body-font-size);
+    height: var(--btn-height);
+    width: var(--btn-width);
+    color: var(--btn-color);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    &:hover {
+        opacity: 0.8;
+    }
+    & + & {
+        margin-left: var(--btn-space-between);
+    }
+    &-right{
+        justify-self: flex-end;
+        margin-left: auto;
+    }
+}
+
+.btn-primary {
+    background-color: var(--btn-primary)
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary)
+}
+
+.btn-success {
+    background-color: var(--btn-success)
+}
+
+.btn-warning {
+    background-color: var(--btn-warning)
+}
+
+.btn-danger {
+    background-color: var(--btn-danger)
+}
+
