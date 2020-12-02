@@ -1,5 +1,5 @@
 # Dashboard
-Quick example made with CRA.
+Quick [example](https://eregarmk.github.io/dashboard-example/) made with CRA.
 
 
 
